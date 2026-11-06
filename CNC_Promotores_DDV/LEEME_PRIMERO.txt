@@ -1,0 +1,21 @@
+CNC DDV - RELEVAMIENTO RAPIDO PARA PROMOTORES
+
+1. Descomprimi todo este ZIP en una carpeta nueva del escritorio.
+2. Hace doble clic en INICIAR_PROMOTORES_LOCAL.bat
+3. La primera vez requiere Internet para instalar Streamlit.
+4. Abri http://localhost:8520 si no se abre solo.
+5. Ingreso con nombre completo del promotor O codigo de uno de sus clientes asignados.
+6. Se mostrara UN SOLO CLIENTE A LA VEZ y cuatro iconos para responder.
+7. Si el cliente corresponde a CZA y UNG, UNA respuesta completa AMBOS.
+8. El cliente respondido desaparece de pendientes y se muestra el proximo.
+9. En modo prueba, Control de supervision no requiere clave.
+
+ATENCION:
+- El archivo data/relevamientos.sqlite guarda las respuestas de la prueba.
+- NO se puede compartir localhost entre promotores fuera de tu computadora.
+- Para distribuir un solo link real se debe publicar en Streamlit con base
+  PostgreSQL y codigos personales de acceso. Ver README.md.
+- NO subas el ZIP CON DATOS a GitHub publico.
+
+Campana de prueba: 2026-10
+357 casos (132 CZA + 225 UNG) = 268 clientes unicos / 13 promotores.

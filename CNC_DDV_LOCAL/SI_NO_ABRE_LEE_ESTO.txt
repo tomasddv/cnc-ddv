@@ -1,0 +1,25 @@
+# CNC DDV - Arranque local corregido (Windows)
+
+1. Extrae **todo** el ZIP. No abras el BAT desde adentro del ZIP.
+2. Ingresa a la carpeta `CNC_DDV_LOCAL` que se creo al extraerlo.
+3. Ejecuta `INICIAR_CNC_LOCAL.bat` (doble clic).
+4. Deja abierta la ventana negra. El navegador se abre solo cuando Streamlit esta listo.
+5. Si el navegador no aparece, prueba manualmente `http://localhost:8501` o `http://localhost:8502`.
+
+El primer inicio necesita Internet para instalar las dependencias de Python.
+Si Python no esta instalado, descargalo de https://www.python.org/downloads/ y activa "Add Python to PATH".
+
+## Si no abre
+
+**El archivo `diagnostico_inicio.txt` se genera en la misma carpeta.** Enviame el texto del archivo o una captura de la ventana negra. No necesitás adivinar el error.
+
+Causas habituales:
+- Se intento ejecutar el BAT *dentro* del ZIP.
+- Python no esta instalado o no esta incluido en PATH.
+- Windows bloquea la ejecucion de un BAT descargado.
+- Fallo la instalacion de Streamlit/pandas por falta de Internet.
+- Otro tablero usa el puerto 8501 (intentaremos usar 8502).
+
+Para salir, cierra la ventana negra, o presiona Ctrl+C.
+
+Los datos de Force y clientes son una copia para pruebas. Los cambios se guardan en `data/cnc_local.sqlite`. No incluyas los datos comerciales en repositorios publicos.
